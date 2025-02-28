@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#"><img src="./Imagenes/instagram (1).png"
+                        width="30" style="margin-right: 2px;">
+                    <span  style="margin:auto;" >Instagram</span>
+                </a>
+                <button    class="navbar-toggler" type="button" data-toggle="collapse" data-target="#iexampleModal"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item active">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Create a new post
+                            </button>
+                        </li>
+                        <div class="dropdown" style="margin-left: 20px;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <img src="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesability</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: red;">Log out </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="Add the caption of your post here" rows="3"></textarea>
+                            <img class="ImageModal" src="Imagenes/camara.jpeg" alt="camara">
+                            <img class="ImageModal" src="Imagenes/location.jpeg" alt="location">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container d-flex flex-column mt-2">
+                <ul class="nav nav-underline mb-3 justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true"><img class="table" src="Imagenes/cells.png" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false"><img class="table" src="/imagenes/list.png" alt=""></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <div class="row gap-5 justify-content-center mb-3" id="square">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/india.png" class="card-img-top" alt="Chicas de india">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/2025.png" class="card-img-top"
+                                        alt="Año nuevo">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/castillo.png" class="card-img-top"
+                                        alt="Castillo">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/Paris.png" class="card-img-top"
+                                        alt="Paris Francia">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/Taj.png" class="card-img-top"
+                                        alt="Taj mahal">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/tecno.png" class="card-img-top"
+                                        alt="Tecnología">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/barcelona.png" class="card-img-top"
+                                        alt="Guia de barcelona">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/next_travel.png" class="card-img-top"
+                                        alt="Proximo destino">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 17.9rem;">
+                                    <img class="Photo rounded-1" src="Imagenes/puerto_madero.png" class="card-img-top"
+                                        alt="Argentina">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>My Travel to india</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/india.png" class="card-img-top"
+                                    alt="En la india">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">800 Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>Happy new year</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/2025.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">1.000 Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>Castle</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/castillo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">1.3 mill Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>Paris France</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/Paris.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">500 Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>India</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/Taj.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">250 Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card" style="width: 35.1rem; height:35em;">
+                                <h2>Technology</h2>
+                                <img class="Photo2 rounded-1" src="Imagenes/tecno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start,  mb-2">
+                                        <i class="fa fa-heart mx-2"></i> 
+                                        <i class="fa fa-comment mx-2"></i> 
+                                        <i class="fa fa-share mx-2"></i> 
+                                    </div>
+                                    <span class="card-title">20 Likes</span> 
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+

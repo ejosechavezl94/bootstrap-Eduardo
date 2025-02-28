@@ -1,0 +1,45 @@
+i,
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+body{
+    background-color: gray;
+}
+.Photo {
+    width: 285px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Photo2 {
+    width: 560px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.ImageModal {
+    width: 25px;
+    height: 25px;
+}
+
+.table {
+    width: 22px;
+    height: 22px;
+}
+
+#profile-tab-pane {
+    justify-self: center;
+}
